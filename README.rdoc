@@ -1,3 +1,5 @@
+{<img src="https://secure.travis-ci.org/herestomwiththeweather/oauth2_mac_client.png" alt="Build Status" />}[http://travis-ci.org/herestomwiththeweather/oauth2_mac_client]
+
 = oauth2_mac_client
 
 OAuth 2.0 MAC Client Library.
