@@ -4,12 +4,15 @@
 
 OAuth 2.0 MAC Client Library.
 
+This library does not include an HTTP client so that the choice is left to the developer.  Thanks to nov for rack-oauth2 library! You can quickly try out the code: https://gist.github.com/2024309
+
 == Installation
 
   gem install oauth2_mac_client
 
 == Resources
 
+* Sample code using Net::HTTP (https://gist.github.com/2024309)
 * View Source on GitHub (https://github.com/herestomwiththeweather/oauth2_mac_client)
 * Report Issues on GitHub (https://github.com/herestomwiththeweather/oauth2_mac_client/issues)
 
