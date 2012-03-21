@@ -1,5 +1,6 @@
 require "oauth2_mac_client/version"
-require "active_support/core_ext"
+require "base64"
+require "openssl"
 
 module Oauth2MacClient
   class Token

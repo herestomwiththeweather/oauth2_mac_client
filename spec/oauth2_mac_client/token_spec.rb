@@ -4,10 +4,10 @@ module Oauth2MacClient
   describe Token do
     let :token do
       Token.new(
-        access_token: 'access_token',
-        mac_key: 'secret',
-        mac_algorithm: 'hmac-sha-256',
-        issued_at: issued_at
+        :access_token => 'access_token',
+        :mac_key => 'secret',
+        :mac_algorithm => 'hmac-sha-256',
+        :issued_at => issued_at
     )
     end
 
@@ -19,7 +19,7 @@ module Oauth2MacClient
 
     describe '.calculate_hmac' do
       it "produces the hmac expected from the spec" do
-        @token = Token.new(access_token:'abc',mac_key:'8yfrufh348h',mac_algorithm:'hmac-sha-1')
+        @token = Token.new(:access_token => 'abc',:mac_key => '8yfrufh348h',:mac_algorithm => 'hmac-sha-1')
         @token.nonce = '273156:di3hvdf8'
         @token.method = 'POST'
         @token.request_uri = '/request'
